@@ -1,0 +1,666 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4em;
+  color: #ffffff;
+  background-color:rgba(0, 0, 0, 0.9);
+  margin: 0;
+  z-index: 1;
+}
+
+ 
+/* --Header-- */
+
+.logo {
+  width: 5%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --Encrage-- */
+
+a {
+  text-decoration: none;
+  color: #0DA8DE;
+}
+
+a:hover {
+  color: #1073a1;
+}
+
+hr {
+  height: 2px; color: #062b55; background-color: #2d519d; width: 75%; border: none;
+}
+
+.row1 {
+  display: flex;
+}
+
+.row2 {
+  display: flex;
+}
+
+.row3 {
+  display: flex;
+}
+
+/* Légende */
+
+figure {
+  margin: 16px 0;
+}
+
+/* Titre */
+
+h1, h2, h3 {
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #0DA8DE;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: #0DA8DE;
+  margin: 15px 0;
+}
+
+h3 {
+  color :rgb(40, 50, 143);
+}
+
+p {
+  color : rgb(255, 255, 255)
+}
+
+h2 span {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+h2 span::before {
+  content: '(';
+}
+
+h2 span::after {
+  content: ')';
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+header nav, #accroche, h1, h2, h3, h4 {
+  font-family: 'Bree Serif', serif;
+}
+
+/* Footer */
+
+footer {
+  color: #FFF;
+  line-height: 1.8em;
+}
+
+footer h2 {
+  color: #FFF;
+  font-size: 1.2em;
+}
+
+footer .nav {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .fab {
+  margin-right: 10px;
+}
+
+footer a {
+  color: #FFF;
+}
+
+#footer-upper {
+  padding: 20px 40px;
+  background-color: #0083cf;
+}
+
+#footer-upper p {
+  margin: 0;
+  color :rgb(255, 255, 255)
+}
+
+#footer-lower {
+  padding: 15px 40px;
+  background-color: #010447;
+  text-align: center;
+}
+
+#footer-lower p {
+  margin: 0;
+  color :rgb(255, 255, 255)
+}
+
+footer .top {
+  display: none;
+  text-align: center;
+}
+
+footer .top a {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  z-index: 100;
+}
+/* --Accueil-- */
+
+/*INTRO*/
+#accueil-intro {
+  margin: 0;
+  padding: .3rem;
+  text-align: center;
+  background: url('accueil-intro.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-text-stroke: .2px rgb(255, 255, 255);
+}
+
+#accueil-intro > img {
+  display: block;
+  max-width: 200%;
+  height: 200%;
+}
+
+#accueil-intro > h1,
+.eau-sterile {
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}
+
+.eau-sterile > h2,
+.eau-sterile > p {
+  margin: .2rem;
+  font-size: 1rem;
+}
+
+
+/*Pilules*/
+#pilules {
+  margin: 5%;
+  padding: .3rem;
+  text-align: start;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#pilules > img {
+  display: block;
+  max-width: 200%;
+  height: 200%;
+}
+
+#pilules > h2,
+.pilules-text {
+  padding: 0;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.pilules-text > p {
+  font-size: 1rem;
+}
+
+/*Testicules*/
+#testicules {
+  margin: 5%;
+  padding: .3rem;
+  text-align: start;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#testicules > img {
+  display: block;
+  max-width: 200%;
+  height: 200%;
+}
+
+#testicules > h2,
+.testicules-text {
+  padding: 0;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.testicules-text > p {
+  font-size: 1rem;
+}
+
+/*Poisson*/
+#poisson {
+  margin: 5%;
+  padding: .3rem;
+  text-align: start;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#poisson > img {
+  display: block;
+  max-width: 1000%;
+  height: 400%;
+}
+
+
+#poisson > h2,
+.poisson-text {
+  padding: 0;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.poisson-text > p {
+  font-size: 1rem;
+}
+
+/*Cuivre*/
+#cuivre {
+  margin: 5%;
+  padding: .3rem;
+  text-align: start;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#cuivre > img {
+  display: block;
+  max-width: 200%;
+  height: 200%;
+}
+
+#cuivre > h2,
+.cuivre-text {
+  padding: 0;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.cuivre-text > p {
+  font-size: 1rem;
+}
+
+/* --Théorie-- */
+
+/*Titre*/
+#théorie {
+  margin: 0;
+  padding: .3rem;
+  text-align: center;
+  background: url('théorie.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#théorie > img {
+  display: block;
+  max-width: 200%;
+  height: 200%;
+}
+
+#théorie > h1,
+.titre-théorie {
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 3rem; 
+  -webkit-text-stroke: 0.2px rgb(255, 255, 255);
+}
+
+.titre-théorie > h2,
+.titre-théorie > p {
+  margin: .2rem;
+  font-size: 1rem;
+}
+
+/*Text*/
+#text-théorie {
+  margin : 5%;
+}
+
+/*Vidéo*/
+.video {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+
+/* --Schéma-- */
+
+#cartographie-titre {
+  margin: 0;
+  padding: .3rem;
+  text-align: center;
+  background: url('cartographie.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-text-stroke: .2px rgb(255, 255, 255);
+}
+
+#cartographie-titre > img {
+  display: block;
+  max-width: 200%;
+  height: 200%;
+}
+
+#cartographie-titre > h1 {
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}
+
+#cartographie-titre > h2,
+#cartographie-titre > p {
+  margin: .2rem;
+  font-size: 3rem;
+}
+
+#cartographie-text > p {
+  font-size: 1.5rem;
+}
+
+/* --La théorie-- */
+
+#la-théorie-titre {
+  margin: 0;
+  padding: .3rem;
+  text-align: center;
+  background: url('complot.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-text-stroke: .2px rgb(255, 255, 255);
+}
+
+#la-théorie-titre > img {
+  display: block;
+  max-width: 200%;
+  height: 200%;
+}
+
+#la-théorie-titre > h1 {
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}
+
+#la-théorie-titre > h2,
+#la-théorie-titre > p {
+  margin: .2rem;
+  font-size: 1rem;
+}
+
+img {
+  text-align: center;
+}
+
+
+/* Contact */
+
+#contact-intro {
+  margin: 0;
+  padding: .3rem;
+  text-align: center;
+  background: url('accueil-intro.jpg');
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-text-stroke: .2px rgb(255, 255, 255);
+}
+
+#contact-intro > img {
+  display: block;
+  max-width: 200%;
+  height: 200%;
+}
+
+#contact-intro > h1,
+.contact-titre {
+  margin: .5rem;
+  padding: .3rem;
+  font-size: 5rem;
+  -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}
+
+.contact-titre > h2,
+.contact-titre > p {
+  margin: .2rem;
+  font-size: 1rem;
+}
+
+
+/* Navigation */
+
+@media screen and (min-width: 1024px) {
+  /* Fixer le header pour le défilement */
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+  }
+
+  header nav * {
+    transition: All 1s ease-in;
+  }
+
+  header .logo:hover img {
+    transform: scale(1.2);
+  }
+}
+
+header .container {
+  padding: 10px 20px;
+}
+
+nav {
+  border-bottom: 1px solid #0d4fde;
+}
+
+#topmenu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  -webkit-text-stroke: .2px rgb(0, 0, 0);
+}
+
+#topmenu li {
+  margin: 15px 0;
+}
+
+#topmenu a {
+  color: #0d6fde;
+  font-size: 1.4em;
+
+}
+
+#topmenu a:hover, #topmenu a.active {
+  color: #1026a1;  
+}
+
+/* Styles du main */
+
+main {
+  margin-bottom: 30px;
+}
+
+main section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 5%;
+}
+
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner {
+  display: none;
+}
+
+#accroche {
+  background-image: url('plage.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 2px 2px #222;
+  padding: 50px 20px;
+}
+
+#accroche h1 {
+  font-size: 3rem;
+  color: #FFF;
+}
+
+#accroche p {
+  font-size: 1.5em;
+}
+
+main.contact {
+  margin-bottom: 0;
+}
+
+#plan {
+  padding-bottom: 0;
+}
+
+#plan iframe {
+  border: 0;
+  width: 100%;
+  height: 400px;
+}
+
+.required::after {
+  content: '(*)';
+  color: rgb(0, 20, 204);
+  margin-left: 3px;
+}
+
+fieldset {
+  border: 1px solid #0DA8DE;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  color: #0DA8DE;
+  padding: 0 5px;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  #accroche {
+    padding: 100px 30px;
+  }
+
+  #accroche p {
+    font-size: 2em;
+  }
+
+  .banner {
+    display: block;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  #topmenu>ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #accroche {
+    padding: 200px 40px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  #offre article {
+    margin: 0 auto;
+  }
+
+  #offre article:not(:last-child) {
+    margin-right: 2%;
+  }
+
+  .col-md-6 {
+    flex-basis: 48%;
+  }
+
+  .col-md-4 {
+    flex-basis: 32%;
+  }
+}
